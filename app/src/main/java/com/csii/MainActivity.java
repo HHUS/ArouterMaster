@@ -14,6 +14,7 @@ import com.csii.mvp.contract.HomeContract;
 import com.csii.mvp.presenter.HomePresenter;
 import com.csii.sunhao.arouter_master.R;
 
+import androidx.work.WorkManager;
 import timber.log.Timber;
 
 public class MainActivity extends BaseActivity<HomePresenter> implements HomeContract.View{
@@ -26,6 +27,10 @@ public class MainActivity extends BaseActivity<HomePresenter> implements HomeCon
 
     @Override
     public void initData(@Nullable Bundle savedInstanceState) {
+
+
+//        AlarmManager,JobScheuler
+
         Timber.e("initData");
 
         float smllWidth = DeviceUtils.getSmllWidthDp(MainActivity.this);
