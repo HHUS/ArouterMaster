@@ -107,4 +107,23 @@ public class MainActivity extends BaseActivity<HomePresenter> implements HomeCon
     }
 
 
+    private long mPressedTime;
+
+
+    @Override
+    public void onBackPressed() {
+        //获取第一次按键时间
+        long mNowTime = System.currentTimeMillis();
+        //比较两次按键时间差
+        if ((mNowTime - mPressedTime) > 2000) {
+            Toast.makeText(getApplicationContext(),
+                    "再按一次退出",Toast.LENGTH_SHORT).show();
+            mPressedTime = mNowTime;
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+
+
 }
