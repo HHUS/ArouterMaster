@@ -15,7 +15,7 @@
  */
 package com.csii.baselib.utils;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 public final class Preconditions {
 

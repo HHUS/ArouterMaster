@@ -19,6 +19,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.csii.photo.DragPhotoActivity"
+            android:theme="@style/translucent"></activity>
+
         <meta-data
             android:name="com.csii.app.GlobalConfiguration"
             android:value="ConfigModule" />

@@ -1,6 +1,6 @@
 package com.csii.work;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import androidx.work.Worker;
 
