@@ -17,6 +17,7 @@ import com.csii.mvp.presenter.HomePresenter;
 import com.csii.photo.DragPhotoActivity;
 import com.csii.sunhao.arouter_master.R;
 
+import androidx.work.WorkManager;
 import timber.log.Timber;
 
 public class MainActivity extends BaseActivity<HomePresenter> implements HomeContract.View{
@@ -36,8 +37,7 @@ public class MainActivity extends BaseActivity<HomePresenter> implements HomeCon
 
 
 //        AlarmManager,JobScheuler
-
-//        Timber.e("initData");
+        Timber.e("initData");
 
         float smllWidth = DeviceUtils.getSmllWidthDp(MainActivity.this);
         Timber.e("屏幕的最小宽度（dp）:" + smllWidth);
